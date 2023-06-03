@@ -1,0 +1,12 @@
+<h1>Admins</h1>
+
+<ul>
+  <li *ngFor="let admin of admins">
+    {{ admin }}
+  </li>
+</ul>
+
+<input type="text" placeholder="Admin address" #adminAddressInput>
+<button (click)="addAdmin(adminAddressInput.value)">Add Admin</button>
+
+<button (click)="listAdmins()">List Admin</button>

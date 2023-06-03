@@ -1,0 +1,39 @@
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease-in-out;
+}
+
+@media (max-width: 767.98px) {
+    .navbar.fixed-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .navbar.fixed-bottom .navbar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .navbar.fixed-bottom .nav-link {
+        margin: 4px;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .navbar.fixed-bottom .nav-link:hover {
+        color: black;
+    }
+}
+
+.active-link {
+    color: blue;
+  }
